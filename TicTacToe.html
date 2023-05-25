@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTT Game</title>
+</head>
+<link rel="stylesheet" href="gameStyle.css">
+
+<body>
+    <header>TIK-TAC-TOE GAME</header>
+
+    <div class="container">
+        <div class="container1">
+            <div class="turn">
+                <div style="color: yellow; margin-right: 3vh;">Turn : </div>
+                <div id="turn"></div>
+            </div>
+            <div class="whoWin" id="win"></div>
+            <div class="but" id="but" style="margin-top: -27px;"><button onclick="generateChance()">Click to Toss</button></div>
+            <div class="toss"></div>
+            <div class="status" id="s">Player 1 Wins</div>
+        </div>
+
+            <div class="game">
+                <div class="col">
+                    <div class="row row11" id="11" onclick="mark(this.id)"></div>
+                    <div class="row row21" id="21" onclick="mark(this.id)"></div>
+                    <div class="row row31" id="31" onclick="mark(this.id)"></div>
+                </div>
+
+                <div class="col">
+                    <div class="row row12" id="12" onclick="mark(this.id)"></div>
+                    <div class="row row22" id="22" onclick="mark(this.id)"></div>
+                    <div class="row row32" id="32" onclick="mark(this.id)"></div>
+                </div>
+                <div class="col">
+                    <div class="row row13" id="13" onclick="mark(this.id)"></div>
+                    <div class="row row23" id="23" onclick="mark(this.id)"></div>
+                    <div class="row row33" id="33" onclick="mark(this.id)"></div>
+                </div>
+            </div>
+    </div>
+    <div class="resetButton"><button onclick="reset()">Reset</button></div>
+    <footer> MADE BY</footer>
+
+    <script src="gameScript.js"></script>
+</body>
+
+</html>

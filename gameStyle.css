@@ -1,0 +1,131 @@
+header {
+    background-color: yellow;
+    height: 10vh;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6vh;
+    margin-bottom: 4vh;
+    border-bottom: 3px groove darkred;
+    padding-left: 5vh;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+    color: yellow;
+}
+
+.container {
+    min-height: 75vh;
+    font-size: 4vh;
+}
+
+footer {
+    background-color: yellow;
+    height: 10vh;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6vh;
+    padding-left: 5vh;
+}
+
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.row {
+    height: 20vh;
+    width: 20vh;
+    border: 4px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+}
+
+.row:hover{
+    cursor: crosshair;
+    border:  blue solid;
+}
+
+
+.row11,
+.row21,
+.row31 {
+    border-left: 0px;
+}
+
+.row13,
+.row23,
+.row33 {
+    border-right: 0px;
+}
+
+.row11,
+.row12,
+.row13 {
+    border-top: 0px;
+}
+
+.row31,
+.row32,
+.row33 {
+    border-bottom: 0px;
+}
+
+.turn{
+  display: flex;
+  font-size: 5vh;
+  color: aliceblue;
+  border: red 2px solid;
+  width: 35vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around
+}
+
+.status{
+    font-size: 8.5vh;
+    color: violet;
+    opacity: 0;
+}
+
+.container2{ 
+    display: flex; 
+    justify-content: center;
+}
+
+.whoWin{
+    opacity: 0;
+}
+
+button{
+    width: 25vh;
+    height: 8vh;
+    font-size: 3.5vh;
+    margin-left: 10%;
+    color: purple;
+    margin-top: 10px;
+}
+button:hover{
+    border:3px blue solid;
+}
+
+.resetButton{
+    margin-left: -12vh;
+}
